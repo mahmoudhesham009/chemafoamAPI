@@ -6,5 +6,5 @@ def getDamaged(df):
     filt_B=filterByShift(df,'B')
 
     filt_a['the actual amount'].sum()
-    print(filt_a['the actual amount'].sum())
+    print(filt_a['الكميةالفعلية /م3'].sum())
 

@@ -13,8 +13,6 @@ date=None
 def filterByDate(dataFrame,date):
     if date != None:
         filt=dataFrame['Date']==date
-        print(dataFrame.head(100))
-        print(date)
         return dataFrame[filt]
 
     else :
@@ -87,10 +85,6 @@ def getPlanHour(df):
 
     return get_presntage(shift_A_plan_hour,shift_A_actual_hour),get_presntage(shift_B_plan_hour,shift_B_actual_hour),get_presntage(total_plan_hour,total_actual_hour)
     
-
-
-
-
 
 @app.route('/data')
 def params():
