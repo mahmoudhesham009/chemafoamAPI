@@ -2,7 +2,7 @@ from flask import Flask ,request
 from flask_restful import Api, Resource
 import pandas as pd
 
-df=pd.read_excel('DataSheet.xlsx')
+df=None
 
 app=Flask(__name__)
 date=None
