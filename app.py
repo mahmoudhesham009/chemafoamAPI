@@ -1,6 +1,5 @@
 from flask import Flask ,request
 from flask_restful import Api, Resource
-from calc import *
 import pandas as pd
 
 df=pd.read_excel('DataSheet.xlsx')
