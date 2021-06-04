@@ -86,7 +86,7 @@ def getPlanHour(df):
     return get_presntage(shift_A_plan_hour,shift_A_actual_hour),get_presntage(shift_B_plan_hour,shift_B_actual_hour),get_presntage(total_plan_hour,total_actual_hour)
     
 
-@app.route('/data')
+@app.route('/',methods=['GET'])
 def params():
     try:
         date=request.args['date']
